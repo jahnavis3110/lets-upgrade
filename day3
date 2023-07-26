@@ -1,0 +1,17 @@
+class Animal:
+ def make_sound(self):
+  print("generic animal sound")
+class Dog(Animal):
+ def make_sound(self):
+  print("Dog:Bark!")
+class Cat(Animal):
+ def make_sound(self):
+  print("Cat:Meow!")
+def animal_sound_in_zoo(animal):
+ animal.make_sound()
+if__name__ =="__main__":
+ dog_instance=Dog()
+ cat_instance=Cat()
+ animal_sound_in_zoo(dog_instance)
+ animal_sound_in_zoo(cat_instance)
+  
